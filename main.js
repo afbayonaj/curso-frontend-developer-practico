@@ -30,6 +30,8 @@ function toggleMobileMenu() {
         shoppingCartContainer.classList.add('inactive');
     }
 
+    closeProductDetailAside()
+
     mobileMenu.classList.toggle('inactive');
 }
 
@@ -43,6 +45,12 @@ function toggleCarritoAside() {
 
     if (!isDesktopMenuClosed) {
         desktopMenu.classList.add('inactive');
+    }
+
+    const isProductDetailClosed = productDetailContainer.classList.contains('inactive');
+
+    if (!isProductDetailClosed) {
+        productDetailContainer.classList.add('inactive');
     }
 
     shoppingCartContainer.classList.toggle('inactive');

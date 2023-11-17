@@ -95,9 +95,9 @@ nav {
 /* Menu en desktop */
 .desktop-menu {
     position: absolute;
-    background-color: --var(--white);
     top: 60px;
     right: 60px;
+    background: var(--white);
     width: 100px;
     height: auto;
     border: 1px solid var(--very-light-pink);
@@ -190,6 +190,8 @@ aside {
 /* ShoppingCart */
 #shoppingCartContainer {
     padding: 0 24px;
+    border-radius: 0px 0px 0px 10px;
+    padding-bottom: 10px;
 }
 
 .title-container {
